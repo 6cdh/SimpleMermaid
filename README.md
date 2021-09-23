@@ -9,6 +9,7 @@ between `<mermaid>` and `</mermaid>`.
 -   Simple (less than 100 LOC)
 -   Usable at preview page
 -   Full mermaid support
+-   Better error report
 
 ## Install
 
@@ -35,7 +36,7 @@ flowchart LR
 
 The example above will be expanded as
 
-```html
+``` html
 <div class="mermaid">
 flowchart LR
     Start --> Stop
