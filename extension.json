@@ -1,0 +1,31 @@
+{
+  "name": "SimpleMermaid",
+  "author": "6cdh",
+  "url": "https://github.com/6cdh/SimpleMermaid",
+  "description": "This extension renders mermaid in <code><nowiki><mermaid></nowiki></code> on client",
+  "version": "0.1",
+  "license-name": "MIT",
+  "type": "parserhook",
+  "AutoloadClasses": {
+      "SimpleMermaidHooks": "includes/SimpleMermaidHooks.php"
+  },
+  "config": {
+    "SimpleMermaidTheme": {
+      "value": "default",
+      "description": "mermaid theme, one of base/default/forest/dark"
+    }
+  },
+  "Hooks": {
+    "ParserFirstCallInit": "SimpleMermaidHooks::onParserFirstCallInit"
+  },
+  "ResourceModules": {
+    "ext.SimpleMermaid": {
+      "scripts": ["resources/ext.SimpleMermaid.js"]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteExtPath": "SimpleMermaid"
+  },
+  "manifest_version": 2
+}
