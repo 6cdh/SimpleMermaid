@@ -53,3 +53,7 @@ Then processed by mermaid.
 # mermaid theme
 $wgSimpleMermaidTheme = 'default' # 'default' | 'base' | 'forest' | 'neutral'
 ```
+
+## Thanks
+
+* [SimpleMathJax](https://github.com/jmnote/SimpleMathJax)
